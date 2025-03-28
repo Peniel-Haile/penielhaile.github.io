@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Peniel Haile</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h5>Hi, I'm <span class="input">11th Grade</span></h5>
+                    <h1 class="name">Peniel Haile</h1>
+                    <p class="description">Welcome to My Portfolio!
+
+                       This portfolio showcases my current work and projects. I'm constantly learning and growing, and I look forward to sharing my journey with you. Feel free to explore and reach out if you have any questions!</p>
+                    <div class="social">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-pic">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Peniel Haile, a passionate developer with experience in creating dynamic and responsive websites. I specialize in frontend development but I'm also skilled in backend development.
+            <span class="highlight">I believe in creating intuitive user interfaces and seamless user experiences.</span>
+        </p>
+        <div class="btn-group">
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <p>As a high school student, I’m still building my portfolio, but here are some of the skills I have been working on:</p>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <h3>Website Design</h3>
+                <p>Designed and developed responsive websites for school projects.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Frontend Development</h3>
+                <p>Created interactive websites using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>UI/UX Design</h3>
+                <p>Worked on creating intuitive user interfaces and seamless user experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <p>While I'm still in high school, here's an overview of the skills I've developed so far:</p>
+        <ul>
+            <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React.js</li>
+            <li><strong>Design Tools:</strong> Figma, Adobe XD, Photoshop</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p class="contact-info">
+            <span>Email:</span> peniel121@gmail.com <br>
+            <span>Phone:</span> +251-912232312
+        </p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["11th Grade","Web Developer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
